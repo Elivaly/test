@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Регистрация";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Добро пожаловать на наш сайт. Давайте создадим ваш аккаунт!</p>
+<form asp-action="Verify" method="post">
+    <div>
+        <label for="Name">Имя:</label>
+        <input type="text" id="Name" name="Name" />
+    </div>
+    <div>
+        <label for="Email">Почта:</label>
+        <input type="email" id="Email" name="Email" />
+    </div>
+    <div>
+        <button type="submit">Продолжить</button>
+    </div>
+</form>
